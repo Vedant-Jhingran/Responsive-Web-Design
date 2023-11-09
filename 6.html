@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+    <style>
+        footer {
+            display: grid;
+            grid-template-columns: 30% 20% 20% 30%;
+            position: fixed;
+            bottom: 0;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        a {
+            color: rgb(142, 142, 142);
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+
+        a:hover {
+            color: cornflowerblue;
+        }
+
+        p {
+            color: rgb(142, 142, 142);
+            line-height: 30px;
+        }
+
+        div {
+            padding: 40px;
+        }
+
+        input {
+            width: 90%;
+            height: 40px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        button {
+            width: 93%;
+            height: 45px;
+            border-radius: 5px;
+            background-color: cornflowerblue;
+            color: white;
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 600px) {
+            footer {
+                grid-template-columns: 1fr;
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div>
+            <h2>One Card</h2>
+            <p>India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.</p>
+        </div>
+        <div>
+            <h2>Navigation</h2>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Offers</a>
+        </div>
+        <div>
+            <h2>Support</h2>
+            <a href="#">F.A.Q</a>
+            <a href="#">Cookies Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Support</a>
+        </div>
+        <div>
+            <h2>Newsletter</h2>
+            <input type="text" name="email" id="email" placeholder="Your email id here"></br></br>
+            <button>Subscribe</button>
+        </div>
+    </footer>
+</body>
+</html>
